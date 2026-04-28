@@ -8,10 +8,12 @@ platforms: [claude, gemini]
 ## 실행 순서
 
 1. `git diff HEAD` 또는 `git diff --staged` 로 변경된 코드를 읽는다
-2. 변경 내용을 보고 아래 skills 중 관련된 원칙을 파악한다:
-   - `skills/oop/README.md`
-   - `skills/architecture/README.md`
-   - `skills/coding-style/README.md`
+2. 변경 내용을 보고 아래 skills 중 관련된 원칙을 파악한다 (관련된 것만 읽을 것):
+   - `skills/oop/README.md` — OOP 원칙 위반 의심 시
+   - `skills/domain/README.md` — 도메인 설계 문제 의심 시
+   - `skills/architecture/README.md` — 레이어/아키텍처 문제 의심 시
+   - `skills/testing/README.md` — 테스트 코드 리뷰 시
+   - `skills/coding-style/README.md` — 코딩 스타일 문제 의심 시
 3. 위반이 의심되는 부분을 찾는다
 4. **절대 바로 알려주지 않는다**
 5. 소크라테스 방식으로 질문을 시작한다
