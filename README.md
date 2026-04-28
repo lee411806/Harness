@@ -43,9 +43,11 @@ AI가 변경된 코드를 읽고 기본기 관련 질문을 던진다.
 ├── commands/
 │   └── review.md          ← /review 커맨드 정의
 ├── skills/
-│   ├── oop/README.md      ← OOP 기본기 원칙
-│   ├── architecture/      ← Spring 레이어 아키텍처 원칙
-│   ├── coding-style/      ← Kotlin 코딩 스타일
+│   ├── oop/               ← OOP 원칙 (캡슐화, SRP, DIP, 조합)
+│   ├── domain/            ← 도메인 설계 (TDA, Rich Domain, 정적 팩토리, 예외)
+│   ├── architecture/      ← 아키텍처 (헥사고날, 레이어, UseCase, Command)
+│   ├── testing/           ← 테스트 전략 (계층, 안티패턴, mocking)
+│   ├── coding-style/      ← Kotlin 스타일 (!! 금지, 네이밍, 린트)
 │   └── git/               ← 커밋 컨벤션
 └── agents/                ← 역할별 AI 행동 정의
     ├── backend-dev.md
@@ -59,10 +61,12 @@ AI가 변경된 코드를 읽고 기본기 관련 질문을 던진다.
 
 | 파일 | 역할 | 언제 읽히나 |
 |------|------|------------|
-| `CLAUDE.md` | 소크라테스 리뷰 방식 지침 | 세션 시작 시 자동 |
+| `CLAUDE.md` | 소크라테스 리뷰 방식 + 제어 규칙 | 세션 시작 시 자동 |
 | `commands/review.md` | `/review` 동작 정의 | `/review` 실행 시 |
 | `skills/oop/` | OOP 기본기 원칙 | `/review` 시 AI가 참고 |
-| `skills/architecture/` | Spring 레이어 원칙 | `/review` 시 AI가 참고 |
+| `skills/domain/` | 도메인 설계 원칙 | `/review` 시 AI가 참고 |
+| `skills/architecture/` | 아키텍처 원칙 | `/review` 시 AI가 참고 |
+| `skills/testing/` | 테스트 전략 | `/review` 시 AI가 참고 |
 | `skills/coding-style/` | Kotlin 스타일 원칙 | `/review` 시 AI가 참고 |
 | `skills/git/` | 커밋 컨벤션 | 커밋 관련 작업 시 AI가 참고 |
 
