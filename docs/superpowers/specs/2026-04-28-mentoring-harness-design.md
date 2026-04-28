@@ -82,6 +82,7 @@ MCP           → GitHub 연결 유지
 - 커밋 메시지 컨벤션
 
 ### commands/review.md (신규)
+- 위치: `.config/.ai/commands/review.md` (심볼릭 링크로 Claude/Gemini 공유)
 - `/review` 실행 시 동작 정의
 - 변경된 코드 읽고 → skills/ 참고 → 소크라테스 방식으로 질문 시작
 

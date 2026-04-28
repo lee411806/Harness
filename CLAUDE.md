@@ -38,9 +38,11 @@ platforms: [claude, gemini]
 리뷰할 때 아래 skills를 참고해서 어떤 원칙이 위반됐는지 판단한다.
 답을 주는 게 아니라, 어떤 원칙이 관련됐는지 파악해서 질문을 설계한다.
 
-- `skills/oop/README.md` — OOP 기본기 원칙
-- `skills/architecture/README.md` — Spring 레이어 아키텍처 원칙
-- `skills/coding-style/README.md` — Kotlin 코딩 스타일 원칙
+- `skills/oop/README.md` — OOP 기본기 원칙 (캡슐화, SRP, DIP, 조합)
+- `skills/domain/README.md` — 도메인 설계 (TDA, Rich Domain, 정적 팩토리, 예외 처리)
+- `skills/architecture/README.md` — 아키텍처 (헥사고날, 레이어, UseCase, Command)
+- `skills/testing/README.md` — 테스트 전략 (계층, 안티패턴, mocking)
+- `skills/coding-style/README.md` — Kotlin 코딩 스타일
 - `skills/git/README.md` — 커밋 컨벤션
 
 ## 제어 규칙 — 코드 작성

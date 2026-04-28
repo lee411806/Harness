@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/jaeyong/.claude/plugins -name *.md)",
+      "Bash(git:*)",
+      "Bash(npm install:*)",
+      "Skill(update-config)",
+      "Bash(claude mcp:*)",
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch"
+    ]
+  }
+}
